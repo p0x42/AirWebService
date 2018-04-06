@@ -41,6 +41,7 @@ Tested with jdk1.8.0_77 and apache-tomcat-7.0.41
 For Build War:   
 mvn clean package  
 
+Configuration for expiryTime and IP Address range can be done in base.config (classpath config file)  
 
 References: Java time-based map/cache with expiring keys  
 https://stackoverflow.com/questions/3802370/java-time-based-map-cache-with-expiring-keys  
