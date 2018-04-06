@@ -27,7 +27,7 @@ public class AllocationServiceImpl implements AllocationService {
 		String ipAddress = macIpAllocationTable.getMacIpMap().get(macAddress);
 		if (ipAddress == null) {
 			if (ipPool.getPool().size() == 0) {
-				response.setMessage("No IPS Available");
+				response.setMessage("No IPs available in the pool");
 				return Response.ok(response).build();
 			} else {
 				String ipAddressToAssign = ipPool.getPool().remove();
@@ -37,7 +37,7 @@ public class AllocationServiceImpl implements AllocationService {
 			}
 		}
 
-		response.setMessage("IP Already assigned to the user");
+		response.setMessage("IP has already been assigned to the user");
 
 		return Response.ok(response).build();
 	}
