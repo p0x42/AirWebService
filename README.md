@@ -1,8 +1,8 @@
 # For IP Allocation
-Request Url: http://localhost:8080/air-web-service/allocation/{macAddress}  
-Request Method: POST  
+Request Url: http://localhost:8080/air-web-service/allocate/{macAddress}  
+Request Method: GET  
 
-For e.g: http://localhost:8080/air-web-service/allocation/02:42:f4:91:d4:07  
+For e.g: http://localhost:8080/air-web-service/allocate/02:42:f4:91:d4:07  
 Types of Response depending on the case:   
 {  
     "ip": "192.168.1.3"  
